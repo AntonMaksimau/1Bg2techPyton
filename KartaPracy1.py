@@ -1,11 +1,9 @@
 # Zad 1
-
 # a = int(input())
 # b = int(input())
 # print(a**2 + b**2)
 
 # Zad 2
-
 # a = int(input())
 # b = int(input())
 # print((a + b)**2)
@@ -15,14 +13,21 @@
 # b = int(input())
 # print((a - b)**3)
 
-# #Zad 4
+# Zad 4
 # a = int(input())
 # b = int(input())
 # c = int(input())
 # print(a * b * c)
 
 # Zad 5
-a,b = int(input()), int(input())
-print(2*(a + b)/5)
-print(a + b
-      
+# a,b = int(input()),int(input())
+# print(2 * (a + b)/5)
+# print((a + b) * 0.4)
+
+# Zad 6
+# brutto = int(input())
+# print(brutto / 1.23)
+
+# Zad 7
+# a,b = int(input()),int(input())
+# print(a%b)
