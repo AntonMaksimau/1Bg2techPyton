@@ -20,16 +20,40 @@
 #   print("Yes")
 
 # Zad 4
-LIMIT = 20
-waga = int(input())
-if waga<=LIMIT:
-    print("jedz")
-else:
-    print("stop")
+# LIMIT = 20
+# waga = int(input())
+# if waga<=LIMIT:
+#     print("jedz")
+# else:
+#     print("stop")
+
+# Zad x
+# a,b = int(input()),int(input())
+# if a > b:
+#     print("Pierwsza jest większa")
+# else:
+#     print("Pierwsza jest mniejsza")
 
 # Zad 5
-# a,b,c = int(input()),int(input()),int(input())
-# if c<a and c>b or c>b and c<a:
+# a,b = int(input()),int(input())
+# c = int(input())
+# if a < c < b or b < c < a:
 #     print("TAK")
 # else:
-#     print("NIE")
+#      print("NIE")
+
+# Zad 6
+# p = int(input("p = "))
+# a = int(input("a = "))
+# if (a ** p - a) % p == 0:
+#     print("Tak spełnia")
+# else:
+#     print("Nie spełnia")
+
+# Zad 7
+# p,k,s = int(input("start ")),int(input("koniec ")),int(input("skok "))
+# n = k - p
+# if n <= 3 * s:
+#     print("tak")
+# else:
+#     print("nie")
