@@ -46,14 +46,13 @@
 # p = int(input("p = "))
 # a = int(input("a = "))
 # if (a ** p - a) % p == 0:
-#     print("Tak spełnia")
+#     print("Tak, spełnia")
 # else:
 #     print("Nie spełnia")
 
 # Zad 7
-# p,k,s = int(input("start ")),int(input("koniec ")),int(input("skok "))
-# n = k - p
-# if n <= 3 * s:
-#     print("tak")
+# p,k,s = int(input("Start = ")),int(input("koniec = ")),int(input("skok = "))
+# if k - p <= 3 * s:
+#      print("Tak")
 # else:
-#     print("nie")
+#      print("Nie")
