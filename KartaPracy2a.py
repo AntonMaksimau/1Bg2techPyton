@@ -26,15 +26,15 @@
 # Zad 4
 # a,b,c,d = int(input("a = ")),int(input("b = ")),int(input("c = ")),int(input("d = "))
 # if a < b and a < c and a < d:
-#     print("Najmniejsza liczba to a(" + str(a) + ")")
+#     print("\nNajmniejsza liczba to a(" + str(a) + ")")
 # elif b < a and b < c and b < d:
-#     print("Najmniejsza liczba to b(" + str(b) + ")")
+#     print("\nNajmniejsza liczba to b(" + str(b) + ")")
 # elif c < a and c < b and c < d:
-#     print("Najmniejsza liczba to c(" + str(c) + ")")
+#     print("\nNajmniejsza liczba to c(" + str(c) + ")")
 # elif d < b and d < c and d < a:
-#     print("Najmniejsza liczba to d(" + str(d) + ")")
+#     print("\nNajmniejsza liczba to d(" + str(d) + ")")
 # else:
-#     print("Tu nie ma najmniejszej liczby")
+#     print("\nTu nie ma najmniejszej liczby")
 
 # Zad 5
 # a,b,c = int(input("a = ")),int(input("b = ")),int(input("c = "))
