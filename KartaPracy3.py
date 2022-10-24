@@ -47,13 +47,31 @@
 #         print(i)
 
 # Zad 4
-a = 0
-for i in range(10,100):
-    a += i
-print(a)
+# a = 0
+# for i in range(10,100):
+#     a += i
+# print(a)
 
 # Zad 5
-n = int(input())
+# n = int(input())
+# suma = n * (n+1) // 2
+# for i in range(n-1):
+#     k = int(input())
+#     suma -= k
+# print(suma - k)
 
-for i in range(1,n):
-    a += i
+# Zad 6
+# a,b = 0,1
+# n = int(input())
+# print(f"{a}\n{b}")
+# for i in range(1,n + 1):
+#     if i == a + b:
+#         print(i)
+#         a,b = b,i
+
+# Zad 6.2
+# a,b = 0,1
+# n = int(input())
+# for i in range(n):
+#     print(a)
+#     a,b = b, a + b
