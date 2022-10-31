@@ -3,11 +3,10 @@
 #     print(f"{i} listopada 2022")
 
 # Zad 2
-# a = 0
+# a = 1
 # while True:
-#     a += 1
-#     if a % 2 == 1:
-#         print(a ** 2)
+#     print(a ** 2)
+#     a += 2
 
 # Zad 3
 # for i in range(1000,10000):
@@ -29,8 +28,7 @@
 # Zad 6
 # k = int(input())
 # a = 0
-# for i in range(0,2 * k):
-#     if i % 2 == 0:
+# for i in range(0,2 * k,2):
 #         a += i
 # print(a)
 
@@ -38,8 +36,7 @@
 # m = int(input())
 # a = 0
 # for i in range(10,m * 2 + 10):
-#     if i < 100:
-#         if i % 2 == 1:
+#     if i < 100 and i % 2 == 1:
 #             a += i
 # print(a)
 
