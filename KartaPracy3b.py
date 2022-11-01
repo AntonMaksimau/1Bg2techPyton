@@ -1,6 +1,6 @@
 # Zad 1
-# for i in range(1,31):
-#     print(f"{i} listopada 2022")
+for i in range(1,31):
+    # print(f"{i} listopada 2022")
 
 # Zad 2
 # a = 1
@@ -21,7 +21,7 @@
 # Zad 5
 # n = int(input())
 # g = 0
-# for i in range(1, n + 1):
+# for i in range(1,n + 1):
 #     k = int(input())
 #     g += k
 # print(g)
@@ -30,34 +30,34 @@
 # k = int(input())
 # a = 0
 # for i in range(0,2 * k,2):
-#         a += i
+#     a += i
 # print(a)
 
 # Zad 7
 # m = int(input())
 # a = 0
 # for i in range(10,m * 2 + 10):
-#     if i < 100 and i % 2 == 1:
-#             a += i
+#     if i < 100 and i % 2 == 1:   
+#         a += i
 # print(a)
 
 # Zad 8
 # W = int(input("Kwota wejściowa - "))
 # L = int(input("Liczba lat - "))
-# for i in range(1, L + 1):
+# for i in range(L):
 #     W += (W * (6 / 100))
 # print(W)
 
 # Zad 9
 # n = int(input())
 # a = 0
-# for i in range(21, n * 100 + 21,100):
+# for i in range(21,n * 100 + 21,100):
 #     a += i
 # print(a)
 
 # Zad 10
 # for i in range(1,1000):
-#     d = (i - (i ** (1/2)))
+#     d = i - (i ** (1/2))
 #     if i >= 100:
 #         if d % 100 == 0:
 #             print(i)
