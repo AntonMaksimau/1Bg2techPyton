@@ -1,5 +1,5 @@
 # Zad 1
-for i in range(1,31):
+# for i in range(1,31):
     # print(f"{i} listopada 2022")
 
 # Zad 2
@@ -21,7 +21,7 @@ for i in range(1,31):
 # Zad 5
 # n = int(input())
 # g = 0
-# for i in range(1,n + 1):
+# for i in range(n):
 #     k = int(input())
 #     g += k
 # print(g)
