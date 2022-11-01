@@ -45,7 +45,7 @@
 # W = int(input("Kwota wejściowa - "))
 # L = int(input("Liczba lat - "))
 # for i in range(L):
-#     W += (W * (6 / 100))
+#     W += W * (6 / 100)
 # print(W)
 
 # Zad 9
@@ -57,7 +57,7 @@
 
 # Zad 10
 # for i in range(1,1000):
-#     d = i - (i ** (1/2))
+#     d = i - i ** (1/2)
 #     if i >= 100:
 #         if d % 100 == 0:
 #             print(i)
