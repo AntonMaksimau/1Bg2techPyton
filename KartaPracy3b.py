@@ -36,8 +36,8 @@
 # Zad 7
 # m = int(input())
 # a = 0
-# for i in range(10,m * 2 + 10):
-#     if i < 100 and i % 2 == 1:   
+# for i in range(11,m * 2 + 10,2):
+#     if i < 100:   
 #         a += i
 # print(a)
 
@@ -57,10 +57,7 @@
 
 # Zad 10
 # for i in range(1,1000):
-#     d = i - i ** (1/2)
-#     if i >= 100:
-#         if d % 100 == 0:
-#             print(i)
-#     else:
-#         if d % 10 == 0:
-#             print(i)
+#     if i % 10 == i ** (1/2):
+#         print(i)
+#     elif i % 100 == i ** (1/2):
+#         print(i)
