@@ -34,9 +34,21 @@
 
 # ((if))warunek ? jeśli true: jeśli false
 
-# Zad 3
+# Zad 3 (1)
 # n = int(input())
 # a = 1
 # for i in range(1,n + 1):
 #     print("*" + a * "|" + "*" + a * "-" + "-",end="")
 #     a += 2
+
+# Zad 3 (2)
+# n = int(input())
+# a = 1
+# for i in range(1,n + 1):
+#     print("*",end="")
+#     if i % 2 == 0:
+#         print("-" * i, end="")
+#     else:
+#         print("|" * i, end="")
+
+# Zad 4
