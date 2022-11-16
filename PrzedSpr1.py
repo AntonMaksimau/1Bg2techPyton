@@ -28,7 +28,7 @@
 # else:
 #     print("Nie")
 
-# Zad 4 - Medium - Oblicz sumnę liczb dwucyfrowych podzielnych przez 7
+# Zad 4 - Medium - Oblicz sumę liczb dwucyfrowych podzielnych przez 7
 # suma = 0
 # for i in range(10,100):
 #     if i % 7 == 0:

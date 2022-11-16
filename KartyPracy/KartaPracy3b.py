@@ -42,7 +42,12 @@
 # print(a)
 
 # Zad 8
-None
+# W,L = int(input("Kwota wejściowa - ")),int(input("Liczba lat - "))
+# a = W
+# for i in range(L * 12):
+#     W = W + a * (0.5/100)
+# print(W)
+
 
 # Zad 9
 # n = int(input())
