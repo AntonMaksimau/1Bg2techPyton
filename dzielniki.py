@@ -12,3 +12,4 @@
 #     print("Pierwsza")
 # else:
 #     print("Nie pierwsza")
+

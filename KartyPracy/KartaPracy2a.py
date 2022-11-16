@@ -25,16 +25,7 @@
 
 # Zad 4
 # a,b,c,d = int(input("a = ")),int(input("b = ")),int(input("c = ")),int(input("d = "))
-# if a < b and a < c and a < d:
-#     print("\nNajmniejsza liczba to a(" + str(a) + ")")
-# elif b < a and b < c and b < d:
-#     print("\nNajmniejsza liczba to b(" + str(b) + ")")
-# elif c < a and c < b and c < d:
-#     print("\nNajmniejsza liczba to c(" + str(c) + ")")
-# elif d < b and d < c and d < a:
-#     print("\nNajmniejsza liczba to d(" + str(d) + ")")
-# else:
-#     print("\nTu nie ma najmniejszej liczby")
+# print(f"Najmniejsza liczba to {min(a,b,c,d)}")
 
 # Zad 5
 # a,b,c = int(input("a = ")),int(input("b = ")),int(input("c = "))
@@ -49,5 +40,5 @@
 #     print("Trókąt jest prostokątnym")
 # elif a ** 2 > b ** 2 + c ** 2 or c ** 2 > b ** 2 + a ** 2 or b ** 2 > a ** 2 + c ** 2:
 #     print("Trójkąt jest rozwartokątnym")
-# elif a ** 2 < b ** 2 + c ** 2 or c ** 2 < b ** 2 + a ** 2 or b ** 2 < a ** 2 + c ** 2:
+# elif a ** 2 < b ** 2 + c ** 2 and c ** 2 < b ** 2 + a ** 2 and b ** 2 < a ** 2 + c ** 2:
 #     print("Trókąt jest ostrokątnym")
