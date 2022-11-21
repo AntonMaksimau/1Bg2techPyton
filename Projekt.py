@@ -35,13 +35,13 @@ while m != 1 and m != 2:
                     print(f"{proc}%")
             else:
                 print(n)
-            for i in range(1, (n + 2) // 2):
+            for i in range(1, n // 2 + 1):
                 if n % i == 0:
                     suma += i
             if suma == n:
                 if progr == 2:
                     print("Tak\n")
-                list = str(list) + "\n" + str(ilosc + 1) + ") " + str(n)
+                list += "\n" + str(ilosc + 1) + ") " + str(n)
                 ilosc += 1
             else:
                 if progr == 2:

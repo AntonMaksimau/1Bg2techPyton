@@ -34,6 +34,3 @@
 #     if i % 7 == 0:
 #         suma += i
 # print(suma)
-
-
-    

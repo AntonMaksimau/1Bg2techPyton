@@ -42,11 +42,11 @@
 # print(a)
 
 # Zad 8
-# W,L = int(input("Kwota wejściowa - ")),int(input("Liczba lat - "))
-# a = W
-# for i in range(L * 12):
-#     W = W + a * (0.5/100)
-# print(W)
+# w = int(input("Kwota wejściowa: "))
+# L = float(input("Liczba lat: "))
+# for i in range(int(L * 12)):
+#     w += w * 0.005
+# print(w)
 
 
 # Zad 9
@@ -57,8 +57,6 @@
 # print(a)
 
 # Zad 10
-# for i in range(1,1000):
-#     if i % 10 == i ** (1/2):
-#         print(i)
-#     elif i % 100 == i ** (1/2):
+# for i in range(1000):
+#     if i % 10 == i ** (1/2) or i % 100 == i ** (1/2):
 #         print(i)
