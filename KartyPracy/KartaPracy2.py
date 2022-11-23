@@ -7,14 +7,14 @@
 
 # Zad 2
 # a = int(input())
-# if a>=100 and a<1000 and a%17==0:
+# if a >= 100 and a < 1000 and a % 17==0:
 #     print("TAK")
 # else:
 #     print("NIE")
 
 # Zad 3
 # wiek = int(input())
-# if wiek<18:
+# if wiek < 18:
 #   print("No")
 # else:
 #   print("Yes")
@@ -22,7 +22,7 @@
 # Zad 4
 # LIMIT = 20
 # waga = int(input())
-# if waga<=LIMIT:
+# if waga <= LIMIT:
 #     print("jedz")
 # else:
 #     print("stop")

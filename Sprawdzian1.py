@@ -15,7 +15,7 @@
 # print(f"3) {suma}")
 
 # Zad 2
-# for a in range(10,100):
+# for a in range(10, 100):
 #     n = a
 #     for i in range(9):
 #         if n % 2 == 0:
@@ -35,7 +35,7 @@
 # Zad 4
 # ilosc = 0
 # suma = 0
-# for i in range(100,1000):
+# for i in range(100, 1000):
 #     if i % 39 == 0:
 #         ilosc += 1
 #         suma += i
