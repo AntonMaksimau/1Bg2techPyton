@@ -20,7 +20,7 @@
 # Zad 3 - Hard - Sprawdź czy liczba wpisana przez usera jest doskonałą
 # n = int(input())
 # suma = 0
-# for i in range(1, n):
+# for i in range(1, n // 2 + 1):
 #     if n % i == 0:
 #         suma += i
 # if suma == n:

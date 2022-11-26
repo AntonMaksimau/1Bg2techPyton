@@ -68,23 +68,30 @@
 # n = int(input("Do jakiej liczby policzyć? "))
 # nilosc = 0
 # max = ""
-# for i in range(1, n + 1):
-#     o = i
+# check = 0
+# proc = 0
+# for a in range(1, n + 1):
+#     o = a
 #     ilosc = 0
-#     while i != 1:
-#         if i % 2 == 1:
-#             i = i * 3 + 1
+#     while a != 1:
+#         if a % 2 == 1:
+#             a = a * 3 + 1
 #             ilosc += 1
 #         else:
-#             i /= 2
+#             a /= 2
 #             ilosc += 1
 #         if nilosc == ilosc:
 #             max += "\n" + str(o)
 #         elif nilosc < ilosc:
 #             nilosc = ilosc
 #             max = str(o)
-#     print(f"Liczba {o} daje 1 po {ilosc} krokach\n")
-# print(f"Największa ilosc kroków ({nilosc}) dają liczby:\n{max}")
+#     for i in range(1,101):
+#         if o >= i / 100 * n:
+#             proc = i
+#     if proc != check:
+#         print(f"{proc}% ({o})")
+#         check = proc
+# print(f"\nNajwiększa ilosc kroków ({nilosc}) dają liczby:\n{max}")
 
 ### 2.1
 # n = int(input())
@@ -93,9 +100,11 @@
 #     if n % 2 == 1:
 #         n = n * 3 + 1
 #         ilosc += 1
+#         print(n)
 #     else:
 #         n /= 2
 #         ilosc += 1
+#         print(n)
 # print(f"{ilosc} kroki")
 
 ### 3.0
@@ -111,3 +120,21 @@
 #     if check:
 #         print(a)
 #         n -= 1
+
+### 4.0
+# a = float(input("Liczba "))
+# rt = int(input("Pierwiastek - "))
+# print(a ** (1 / rt))
+
+### 4.1
+# import math
+# a = int(input())
+# print(math.sqrt(a))
+
+### 5.0
+# l1 = int(input())
+# l2 = 0
+# while l1 > 0:
+#     l2 = l2 * 10 + l1 % 10
+#     l1 //= 10
+# print(l2)
