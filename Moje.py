@@ -138,3 +138,10 @@
 #     l2 = l2 * 10 + l1 % 10
 #     l1 //= 10
 # print(l2)
+
+### 6.0
+# n, k = int(input()), int(input())
+# last = 0
+# for i in range(1, n + 1):
+#     last = (last + k) % i
+# print(last + 1)

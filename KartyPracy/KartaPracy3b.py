@@ -48,7 +48,6 @@
 #     w += w * 0.005
 # print(w)
 
-
 # Zad 9
 # n = int(input())
 # a = 0
@@ -58,5 +57,5 @@
 
 # Zad 10
 # for i in range(1000):
-#     if i % 10 == i ** (1/2) or i % 100 == i ** (1/2):
+#     if i % 10 == i ** 0.5 or i % 100 == i ** 0.5:
 #         print(i)
