@@ -1,4 +1,4 @@
-# Zad 1
+# Zad 1 - NWD
 # a, b = int(input()), int(input())
 # while a != b:
 #     if a > b : a = a - b
