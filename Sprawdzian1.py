@@ -1,7 +1,7 @@
 # Zad 1
 # a,b,c,d = int(input()),int(input()),int(input()),int(input())
 # print(f"1) {(a + b + c + d) / 4}")
-# if a - 2 == d or a + 2 == d:
+# if a - 1 == d or a + 1 == d or a == d:
 #     print("2) Tak")
 # else:
 #     print("2) Nie")
