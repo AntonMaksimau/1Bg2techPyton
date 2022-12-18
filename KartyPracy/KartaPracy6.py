@@ -21,21 +21,21 @@
 # print(sum)
 
 # Zad 3
-# for i in range(99,9,-1):
+# for i in range(10, 100):
 #     if i % 7 == 0:
-#         podzielnik = i
-#         break
-# for i in range(1000,10000):
-#     if i % podzielnik == 0:
-#         ilość += 1
-# print(ilość)
-
+#         wielokrotnosc = i
+# ilosc = 0
+# for i in range(1000, 10000):
+#     if i % wielokrotnosc == 0:
+#         ilosc += 1
+# print(ilosc)
+        
 # Zad 4
 # ilosc = 0
 # for i in range(10, 100):
 #     if 2 * (i % 10) <= i // 10:
 #         ilosc += 1
-# print(ilosc)
+# print(ilosc)   
 
 # Zad 5
 # suma = 0
