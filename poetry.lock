@@ -6,10 +6,23 @@ category = "main"
 optional = false
 python-versions = ">=3.6.1"
 
+[[package]]
+name = "pillow"
+version = "9.3.0"
+description = "Python Imaging Library (Fork)"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-issues (>=3.0.1)", "sphinx-removed-in", "sphinxext-opengraph"]
+tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "2ae62838e26ac8bfb5352342f85bd74e438c31f3afb8355c8e50ae106dad74c2"
+content-hash = "3b51ee4b30f0df71ea58491b38dcaf028000c04eecfee5acad419e9ccfe9478f"
 
 [metadata.files]
 dummy-wx = []
+pillow = []

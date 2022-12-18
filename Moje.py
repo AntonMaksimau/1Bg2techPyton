@@ -145,3 +145,55 @@
 # for i in range(1, n + 1):
 #     last = (last + k) % i
 # print(last + 1)
+
+### 7.0
+# x,y = str(input()),str(input())
+# sl = True
+# a,c,b,d = int(x[0]), int(y[0]), 0, 0
+# for i in range(1, len(x)):
+#     if x[i] != "/" and sl:
+#         a = a * 10 + int(x[i])
+#     elif x[i] == "/":
+#         sl = False
+#     else:
+#         b = b * 10 + int(x[i])
+#     preb = b
+#     prea = a
+# sl = True
+# for i in range(1, len(y)):
+#     if y[i] != "/" and sl:
+#         c = c * 10 + int(y[i])
+#     elif y[i] == "/":
+#         sl = False
+#     else:
+#         d = d * 10 + int(y[i])
+#     pred = d
+#     prec = c
+# il = b * d
+# while b != d:
+#     if b > d : b = b - d
+#     if d > b : d = d - b
+# nww = il / b
+# prenww = nww
+# a *= nww / preb
+# c *= nww / pred
+# list = f"{x} + {y} = {int(a)}/{int(prenww)} + {int(c)}/{int(prenww)} = {int(a + c)}/{int(prenww)} = "
+# mian = c + a
+# if mian // nww >= 1:
+#     cal = int(mian // nww)
+#     mian -= (mian // nww) * nww
+#     for i in range(1,int(nww)):
+#         if nww / i % 1 == 0 and mian / i % 1 == 0:
+#             nww /= i
+#             mian /= i
+#     if mian == 0:
+#         print(f"{list}{cal}")
+#     else:
+#         print(f"{list}{cal} i {int(mian)}/{int(nww)}")
+# else:
+#     for i in range(1,int(nww)):
+#         if nww / i % 1 == 0 and mian / i % 1 == 0:
+#             nww /= i
+#             mian /= i
+#     print(f"{list}{int(mian)}/{int(nww)}")
+
