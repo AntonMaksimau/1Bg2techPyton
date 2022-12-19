@@ -1,18 +1,18 @@
 # Zad 1
 # x = int(input())
 # suma = 0
-# for i in range(int(len(str(x)))):
+# while x > 0:
 #     suma += x % 10
 #     x //= 10
 # print(suma)
 
 # Zad 2
-# a = int(input())
-# for i in range(2, int(a ** 0.5) + 1):
-#     if a % i == 0:
-#         print("NIE")
-#         exit()
-# print("TAK")
+a = int(input())
+for i in range(2, int(a ** 0.5) + 1):
+    if a % i == 0:
+        print("NIE")
+        exit(0)
+print("TAK")
 
 # Zad 3
 # a = int(input())
