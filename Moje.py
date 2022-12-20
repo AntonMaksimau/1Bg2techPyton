@@ -226,6 +226,7 @@ for i in range(min(up,down),1,-1):
     if up % i == 0 and down % i == 0:
         up = int(up / i)
         down = int(down / i)
+        break
 if up > down:
     cal = int(up // down)
     up = int(up - (up // down) * down)
