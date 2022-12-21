@@ -198,46 +198,46 @@
 #     print(f"{list}{int(mian)}/{int(nww)}")
 
 ### 7.1
-x, y = str(input()), str(input())
-a,b, c,d = 0,0, 0,0
-sl = True
-for i in range(len(x)):
-    if x[i] != "/" and sl:
-        a = a * 10 + int(x[i])
-    elif x[i] == "/":
-        sl = False
-    else:
-        b = b * 10 + int(x[i])
-sl = True
-for i in range(len(y)):
-    if y[i] != "/" and sl:
-        c = c * 10 + int(y[i])
-    elif y[i] == "/":
-        sl = False
-    else:
-        d = d * 10 + int(y[i])
-if b == 0:
-    b = 1
-if d == 0:
-    d = 1
-up = int(a * c)
-down = int(b * d)
-for i in range(min(up,down),1,-1):
-    if up % i == 0 and down % i == 0:
-        up = int(up / i)
-        down = int(down / i)
-        break
-if up > down:
-    cal = int(up // down)
-    up = int(up - (up // down) * down)
-    if up != 0:
-        print(f"{cal} i {up}/{down}")
-    else:
-        print(f"{cal}")
-elif up == down and up != 0:
-    print("1")
-else:
-    if up != 0:
-        print(f"{up}/{down}")
-    else:
-        print("0")
+# x, y = str(input()), str(input())
+# a,b, c,d = 0,0, 0,0
+# sl = True
+# for i in range(len(x)):
+#     if x[i] != "/" and sl:
+#         a = a * 10 + int(x[i])
+#     elif x[i] == "/":
+#         sl = False
+#     else:
+#         b = b * 10 + int(x[i])
+# sl = True
+# for i in range(len(y)):
+#     if y[i] != "/" and sl:
+#         c = c * 10 + int(y[i])
+#     elif y[i] == "/":
+#         sl = False
+#     else:
+#         d = d * 10 + int(y[i])
+# if b == 0:
+#     b = 1
+# if d == 0:
+#     d = 1
+# up = int(a * c)
+# down = int(b * d)
+# for i in range(min(up,down),1,-1):
+#     if up % i == 0 and down % i == 0:
+#         up = int(up / i)
+#         down = int(down / i)
+#         break
+# if up > down:
+#     cal = int(up // down)
+#     up = int(up - (up // down) * down)
+#     if up != 0:
+#         print(f"{cal} i {up}/{down}")
+#     else:
+#         print(f"{cal}")
+# elif up == down and up != 0:
+#     print("1")
+# else:
+#     if up != 0:
+#         print(f"{up}/{down}")
+#     else:
+        # print("0")

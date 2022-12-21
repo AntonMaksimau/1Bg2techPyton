@@ -69,25 +69,19 @@
 # n = int(input())
 # x = 5
 # suma = 2
-# for i in range(1, n):
-#     if i % 2 == 1:
-#         suma = suma - x
-#     else:
-#         suma = suma + x
-#     x += 3
+# for i in range(n - 1):
+#     suma -= x
+#     x = (abs(x) + 3) * (-1) ** (i + 1)
 # print(suma)
 
 # Zad 9
-# n = int(input())
-# il = 1
-# x = 1
-# for i in range(1, n + 1):
-#     if i % 2 == 1:
-#         il = il * x
-#     else:
-#         il = il * x
-#     x *= -2
-# print(il)
+n = int(input())
+il = 1
+x = 1
+for i in range(n):
+    il = il * x
+    x *= -2
+print(il)
 
 # Zad 10
 # n = int(input())
