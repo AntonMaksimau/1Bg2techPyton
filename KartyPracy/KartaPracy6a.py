@@ -7,17 +7,17 @@
 # print(suma)
 
 # Zad 2
-a = int(input())
-for i in range(2, int(a ** 0.5) + 1):
-    if a % i == 0:
-        print("NIE")
-        exit(0)
-print("TAK")
+# a = int(input())
+# for i in range(2, int(a ** 0.5 + 1)):
+#     if a % i == 0:
+#         print("NIE")
+#         exit(0)
+# print("TAK")
 
 # Zad 3
 # a = int(input())
 # suma = 0
-# for i in range(1,(a // 2) + 1):
+# for i in range(1, a // 2 + 1):
 #     if a % i == 0:
 #         suma += i
 # if suma == a:
@@ -26,7 +26,7 @@ print("TAK")
 #     print("NIE")
 
 # Zad 4
-# x,y = int(input()),int(input())
+# x, y = int(input()), int(input())
 # while x != y:
 #     if x > y : x = x - y
 #     if y > x : y = y - x
@@ -39,8 +39,7 @@ print("TAK")
 # m = int(input())
 # lista = ""
 # for i in range(10,20):
-#     x = i
-#     y = m
+#     x, y = i, m
 #     while y != x:
 #         if x > y : x = x - y
 #         if y > x : y = y - x
@@ -89,10 +88,9 @@ print("TAK")
 # odp = []
 # for a in list:
 #     for b in list:
-#         if a * b > 0 and a * b < 100:
+#         if a * b > 9 and a * b < 100:
 #             odp.append(a * b)
 # print(sorted(set(odp)))
-
 
 # Zad 10
 # n = int(input())
@@ -112,4 +110,3 @@ print("TAK")
 #         print(f"liczba {n} nie ma pary liczby pierwszej")
 # else:
 #     print(f"{n} nie jest liczbą pierwszą")
-

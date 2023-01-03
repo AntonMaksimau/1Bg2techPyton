@@ -75,20 +75,20 @@
 # print(suma)
 
 # Zad 9
-n = int(input())
-il = 1
-x = 1
-for i in range(n):
-    il = il * x
-    x *= -2
-print(il)
+# n = int(input())
+# il = 1
+# x = 1
+# for i in range(n):
+#     il = il * x
+#     x *= -2
+# print(il)
 
 # Zad 10
 # n = int(input())
 # suma = 0
-# for i in range(1, n + 1):
+# for i in range(n):
 #     il = 1
-#     for i in range(1, i + 1):
+#     for i in range(1, i + 2):
 #         il = il * i
 #     suma += il
 # print(suma)
