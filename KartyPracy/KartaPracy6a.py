@@ -64,15 +64,15 @@
 # print(f"{cal}  {int(a)}/{int(b)}")
 
 # Zad 8
-# def sum(x):
+# def suma(x):
 #     suma = 0
 #     for i in range(1, x // 2 + 1):
 #         if x % i == 0:
 #             suma += i
 #     return suma
 # for a in range(1, 10001):
-#     suma = sum(a)
-#     if a == sum(suma) and a != suma:
+#     suma = suma(a)
+#     if a == suma(suma) and a != suma:
 #         print(f"{a}    {suma}")
 
 # Zad 9
