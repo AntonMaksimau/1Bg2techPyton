@@ -241,3 +241,35 @@
 #         print(f"{up}/{down}")
 #     else:
         # print("0")
+
+### 8.0
+# from collections import Counter
+# n = str(input("Введите соддержание текста: "))
+# list = []
+# for i in range(len(n)):
+#     list.append(n[i])
+# print("\nSymbol : ilość\n")
+# c = Counter(list)
+# odp = []
+# check = []
+# for i in set(list):
+#     check.append(c[i])
+#     check.sort(reverse=True)
+#     for a in range(len(check)):
+#         if c[i] >= check[a]:
+#             if i != " ":
+#                 odp.insert(a, [f"{i} : {c[i]}"])
+#             else:
+#                 odp.insert(a, [f"Spacji : {c[i]}"])
+#             break
+#         elif c[i] <= min(check):
+#             if i != " ":
+#                 odp.append([f"{i} : {c[i]}"])
+#             else:
+#                 odp.append([f"Spacji : {c[i]}"])
+#             break
+# for i in range(len(odp)):
+#     print(odp[i])
+    
+
+        

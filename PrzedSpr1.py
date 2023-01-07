@@ -12,7 +12,7 @@
 # a = 0
 # b = 1
 # suma = 0
-# for i in range (n):
+# for i in range(n):
 #     suma += a
 #     a,b = b,a + b
 # print(suma)
