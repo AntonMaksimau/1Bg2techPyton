@@ -243,33 +243,41 @@
         # print("0")
 
 ### 8.0
-# from collections import Counter
-# n = str(input("Введите соддержание текста: "))
-# list = []
-# for i in range(len(n)):
-#     list.append(n[i])
-# print("\nSymbol : ilość\n")
-# c = Counter(list)
-# odp = []
-# check = []
-# for i in set(list):
-#     check.append(c[i])
-#     check.sort(reverse=True)
-#     for a in range(len(check)):
-#         if c[i] >= check[a]:
-#             if i != " ":
-#                 odp.insert(a, [f"{i} : {c[i]}"])
-#             else:
-#                 odp.insert(a, [f"Spacji : {c[i]}"])
-#             break
-#         elif c[i] <= min(check):
-#             if i != " ":
-#                 odp.append([f"{i} : {c[i]}"])
-#             else:
-#                 odp.append([f"Spacji : {c[i]}"])
-#             break
-# for i in range(len(odp)):
-#     print(odp[i])
-    
+from collections import Counter
+n = str(input("Введите соддержание текста: "))
+list = []
+for i in range(len(n)):
+    list.append(n[i])
+print("\nSymbol : ilość\n")
+c = Counter(list)
+odp = []
+check = []
+for i in set(list):
+    check.append(c[i])
+    check.sort(reverse=True)
+    for a in range(len(check)):
+        if c[i] >= check[a]:
+            if i != " ":
+                odp.insert(a, [f"{i} : {c[i]}"])
+            else:
+                odp.insert(a, [f"Spacji : {c[i]}"])
+            break
+        elif c[i] <= min(check):
+            if i != " ":
+                odp.append([f"{i} : {c[i]}"])
+            else:
+                odp.append([f"Spacji : {c[i]}"])
+            break
+for i in range(len(odp)):
+    print(odp[i])
 
-        
+### 8.1
+from collections import Counter
+n = input("Введите содержание текста: ")
+c = Counter(n)
+print("\nSymbol : ilość\n")
+for i, count in c.most_common():
+    if i == " ":
+        print(f"Spacji : {count}")
+    else:
+        print(f"{i} : {count}")
