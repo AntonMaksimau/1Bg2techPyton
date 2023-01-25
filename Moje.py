@@ -7,7 +7,7 @@
 #         suma = 0
 #         for i in range(1, m1 // 2 + 1):
 #             if m1 % i == 0:
-#                 suma += i
+#                 suma += i  
 #         if suma == m1:
 #             print(f"\nLiczba {m1} jest liczbą doskonałą")
 #         else:
@@ -198,24 +198,64 @@
 #     print(f"{list}{int(mian)}/{int(nww)}")
 
 ### 7.1
-# x, y = str(input()), str(input())
+# x, y = str(input("Podaj pierwszy ułamek(a/b): ")), str(input("Podaj drugi ułamek(a/b): "))
 # a,b, c,d = 0,0, 0,0
 # sl = True
-# for i in range(len(x)):
-#     if x[i] != "/" and sl:
-#         a = a * 10 + int(x[i])
-#     elif x[i] == "/":
-#         sl = False
-#     else:
-#         b = b * 10 + int(x[i])
+# minus1, minus2 = False, False
+# error = False
+# if x[0] == "-":
+#     minus1 = True
+#     for i in range(len(x) - 1):
+#         if x[i+1] != "/" and sl:
+#             a = a * 10 + int(x[i+1])
+#         elif x[i+1] == "/":
+#             sl = False
+#         else:
+#             error = False
+#             b = b * 10 + int(x[i+1])
+#             if b == 0:
+#                 error = True
+# else:
+#     for i in range(len(x)):
+#         if x[i] != "/" and sl:
+#             a = a * 10 + int(x[i])
+#         elif x[i] == "/":
+#             sl = False
+#         else:
+#             error = False
+#             b = b * 10 + int(x[i])
+#             if b == 0:
+#                 error = True
+# if error:
+#     print("Mianownik nie może być równy 0!!\nBłąd")
+#     exit(0)
 # sl = True
-# for i in range(len(y)):
-#     if y[i] != "/" and sl:
-#         c = c * 10 + int(y[i])
-#     elif y[i] == "/":
-#         sl = False
-#     else:
-#         d = d * 10 + int(y[i])
+# if y[0] == "-":
+#     minus2 = True
+#     for i in range(len(y) - 1):
+#         if y[i+1] != "/" and sl:
+#             c = c * 10 + int(y[i+1])
+#         elif y[i+1] == "/":
+#             sl = False
+#         else:
+#             error = False
+#             d = d * 10 + int(y[i+1])
+#             if d == 0:
+#                 error = True
+# else:
+#     for i in range(len(y)):
+#         if y[i] != "/" and sl:
+#             c = c * 10 + int(y[i])
+#         elif y[i] == "/":
+#             sl = False
+#         else:
+#             error = False
+#             d = d * 10 + int(y[i])
+#             if d == 0:
+#                 error = True
+# if error:
+#     print("Mianownik nie może być równy 0!!\nBłąd")
+#     exit(0)
 # if b == 0:
 #     b = 1
 # if d == 0:
@@ -227,57 +267,118 @@
 #         up = int(up / i)
 #         down = int(down / i)
 #         break
+# znak = ""
+# if minus1 != minus2:
+#     znak = "-"
 # if up > down:
 #     cal = int(up // down)
 #     up = int(up - (up // down) * down)
 #     if up != 0:
-#         print(f"{cal} i {up}/{down}")
+#         print(f"{znak}{cal} i {up}/{down}")
 #     else:
-#         print(f"{cal}")
+#         print(f"{znak}{cal}")
 # elif up == down and up != 0:
-#     print("1")
+#     print(f"{znak}1")
 # else:
 #     if up != 0:
-#         print(f"{up}/{down}")
+#         print(f"{znak}{up}/{down}")
 #     else:
-        # print("0")
+#         print("0")
 
 ### 8.0
-from collections import Counter
-n = str(input("Введите соддержание текста: "))
-list = []
-for i in range(len(n)):
-    list.append(n[i])
-print("\nSymbol : ilość\n")
-c = Counter(list)
-odp = []
-check = []
-for i in set(list):
-    check.append(c[i])
-    check.sort(reverse=True)
-    for a in range(len(check)):
-        if c[i] >= check[a]:
-            if i != " ":
-                odp.insert(a, [f"{i} : {c[i]}"])
-            else:
-                odp.insert(a, [f"Spacji : {c[i]}"])
-            break
-        elif c[i] <= min(check):
-            if i != " ":
-                odp.append([f"{i} : {c[i]}"])
-            else:
-                odp.append([f"Spacji : {c[i]}"])
-            break
-for i in range(len(odp)):
-    print(odp[i])
+# from collections import Counter
+# n = str(input("Введите соддержание текста: "))
+# list = []
+# for i in range(len(n)):
+#     list.append(n[i])
+# print("\nSymbol : ilość\n")
+# c = Counter(list)
+# odp = []
+# check = []
+# for i in set(list):
+#     check.append(c[i])
+#     check.sort(reverse=True)
+#     for a in range(len(check)):
+#         if c[i] >= check[a]:
+#             if i != " ":
+#                 odp.insert(a, [f"{i} : {c[i]}"])
+#             else:
+#                 odp.insert(a, [f"Spacji : {c[i]}"])
+#             break
+#         elif c[i] <= min(check):
+#             if i != " ":
+#                 odp.append([f"{i} : {c[i]}"])
+#             else:
+#                 odp.append([f"Spacji : {c[i]}"])
+#             break
+# for i in range(len(odp)):
+#     print(odp[i])
 
 ### 8.1
-from collections import Counter
-n = input("Введите содержание текста: ")
-c = Counter(n)
-print("\nSymbol : ilość\n")
-for i, count in c.most_common():
-    if i == " ":
-        print(f"Spacji : {count}")
+# from collections import Counter
+# n = input("Введите содержание текста: ")
+# c = Counter(n)
+# print("\nSymbol : ilość\n")
+# for i, count in c.most_common():
+#     if i == " ":
+#         print(f"Spacji : {count}")
+#     else:
+#         print(f"{i} : {count}")
+
+### 9.0
+# def logarithm(x, base):
+#     if x <= 0:
+#         return None
+#     elif x < 1:
+#         result = 0
+#         while x < 1:
+#             x *= base
+#             result -= 1
+#     else:
+#         result = 0
+#         while x >= base:
+#             x /= base
+#             result += 1
+#     return result
+# print(logarithm(2,4))
+
+x, y = str(input("Podaj pierwszy ułamek(a/b): ")), str(input("Podaj drugi ułamek(a/b): "))
+a, b = map(int, x.split("/"))
+c, d = map(int, y.split("/"))
+
+if b * d == 0:
+    print("Mianownik nie może być zerowym!\nBłąd")
+    exit(0)
+
+if d == 0:
+    d = 1
+if b == 0:
+    b = 1
+    
+znak = ""
+if a * c < 0:
+    znak = "-"
+    a, c = abs(a), abs(c)
+    
+up = a * c
+down = b * d
+for i in range(min(up,down),1,-1):
+    if up % i == 0 and down % i == 0:
+        up = int(up / i)
+        down = int(down / i)
+        break
+
+if up > down:
+    cal = up // down
+    up = int(up - (up // down) * down)
+    if up != 0:
+        print(f"{znak}{cal} i {up}/{down}")
     else:
-        print(f"{i} : {count}")
+        print(f"{znak}{cal}")
+elif up == down and up != 0:
+    print(f"{znak}1")
+else:
+    if up != 0:
+        print(f"{znak}{up}/{down}")
+    else:
+        print("0")
