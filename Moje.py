@@ -260,8 +260,8 @@
 #     b = 1
 # if d == 0:
 #     d = 1
-# up = int(a * c)
-# down = int(b * d)
+# up = a * c
+# down = b * d
 # for i in range(min(up,down),1,-1):
 #     if up % i == 0 and down % i == 0:
 #         up = int(up / i)
@@ -285,7 +285,70 @@
 #     else:
 #         print("0")
 
-### 8.0
+### 7.2
+# minus1, minus2 = False, False
+# b,d = 1,1
+# frac = input("Podaj pierwszy ułamek(a/b): ")
+# try:
+#     a, b = map(int, frac.split("/"))
+# except ValueError:
+#     try:
+#         a, b = map(str, frac.split("."))
+#         if frac[0] == "-":
+#             minus1 = True
+#             a = abs(int(a))
+#         a = (int(a) * (10 ** len(b))) + int(b)
+#         b = 10 ** len(b)
+#     except ValueError:
+#         a = int(frac)
+# frac = input("Podaj drugi ułamek(a/b): ")
+# try:
+#     c, d = map(int, frac.split("/"))
+# except ValueError:
+#     try:
+#         c, d = map(str, frac.split("."))
+#         if frac[0] == "-":
+#             minus2 = True
+#             c = abs(int(c))
+#         c = (int(c) * (10 ** len(d))) + int(d)
+#         d = 10 ** len(d)
+#     except ValueError:
+#         c = int(frac)
+# if b == 0 or d == 0:
+#     print("Mianownik nie może być równy 0!\nBłąd")
+#     exit()
+# if a < 0:
+#     minus1 = True
+#     a = abs(a)
+# if c < 0:
+#     minus2 = True
+#     c = abs(c)
+# znak = ""
+# if minus1 != minus2:
+#     znak = "-"
+# up = a * c
+# down = b * d
+# for i in range(min(up,down),1,-1):
+#     if up % i == 0 and down % i == 0:
+#         up = int(up / i)
+#         down = int(down / i)
+#         break
+# if up > down:
+#     cal = int(up // down)
+#     up = int(up - (up // down) * down)
+#     if up != 0:
+#         print(f"{znak}{cal} i {up}/{down} ({znak}{cal + up / down})")
+#     else:
+#         print(f"{znak}{cal}")
+# elif up == down and up != 0:
+#     print(f"{znak}1")
+# else:
+#     if up != 0:
+#         print(f"{znak}{up}/{down} ({znak}{up / down})")
+#     else:
+#         print("0")
+
+## 8.0
 # from collections import Counter
 # n = str(input("Введите соддержание текста: "))
 # list = []
@@ -325,60 +388,47 @@
 #     else:
 #         print(f"{i} : {count}")
 
+### 8.2 ......
+# n = input("Введите содержание текста: ")
+# list = []
+# for i in range(len(n)):
+#     list.append(n[i])
+# list.sort(key=lambda x: counts[x])
+# for a in set(list):
+#     print(f"{a} - {list.count(a)}")
+
 ### 9.0
-# def logarithm(x, base):
-#     if x <= 0:
-#         return None
-#     elif x < 1:
-#         result = 0
-#         while x < 1:
-#             x *= base
-#             result -= 1
-#     else:
-#         result = 0
-#         while x >= base:
-#             x /= base
-#             result += 1
-#     return result
-# print(logarithm(2,4))
+# n = str(input("Choose your language:\nWybierz język: \npl - polski\nen - english\n"))
+# if n == "en":
+#     end, weight, grade, answ = "END", "Weight: ", "\nGrade: ", f"\nYour overage grade is:" 
+# elif n == "pl":
+#     end, weight, grade, answ = "KONIEC", "Waga: ", "\nOcena: ", f"\nTwoja średnia ocen wynosi:"
+# else:
+#     print("Błąd\nMiałeś napisać tylko 'en' lub 'pl'!")
+#     exit()
+# upsum, downsum = 0, 0
+# while True:
+#     a = input(grade)
+#     if a == end:
+#         break
+#     if a[-1] == "+":
+#         a = int(a[:-1]) + 0.5
+#     elif a[-1] == "-":
+#         a = int(a[:-1]) - 0.25
+#     b = int(input(weight))
+#     upsum += float(a) * b
+#     downsum += b
+# print(answ, upsum / downsum)
 
-x, y = str(input("Podaj pierwszy ułamek(a/b): ")), str(input("Podaj drugi ułamek(a/b): "))
-a, b = map(int, x.split("/"))
-c, d = map(int, y.split("/"))
-
-if b * d == 0:
-    print("Mianownik nie może być zerowym!\nBłąd")
-    exit(0)
-
-if d == 0:
-    d = 1
-if b == 0:
-    b = 1
-    
-znak = ""
-if a * c < 0:
-    znak = "-"
-    a, c = abs(a), abs(c)
-    
-up = a * c
-down = b * d
-for i in range(min(up,down),1,-1):
-    if up % i == 0 and down % i == 0:
-        up = int(up / i)
-        down = int(down / i)
+# 10.0
+passwd = int(input("Twoje hasło: "))
+for i in range(10):
+    print(i)
+    if i == passwd:
+        print(f"Password has cracked: {i}")
         break
-
-if up > down:
-    cal = up // down
-    up = int(up - (up // down) * down)
-    if up != 0:
-        print(f"{znak}{cal} i {up}/{down}")
-    else:
-        print(f"{znak}{cal}")
-elif up == down and up != 0:
-    print(f"{znak}1")
-else:
-    if up != 0:
-        print(f"{znak}{up}/{down}")
-    else:
-        print("0")
+    for a in range(10):
+        print(str(a) + str(i))
+        if int(str(i) + str(a)) == passwd:
+            print(f"Password has cracked: {int(str(i) + str(a))}")
+            break
