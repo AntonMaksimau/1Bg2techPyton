@@ -287,33 +287,50 @@
 
 ### 7.2
 # minus1, minus2 = False, False
-# b,d = 1,1
+# b, d = 1, 1
 # frac = input("Podaj pierwszy ułamek(a/b): ")
 # try:
-#     a, b = map(int, frac.split("/"))
+#     a, b = map(str, frac.split(" "))
+#     up, down = map(int, b.split("/"))
+#     if int(a) < 0:
+#         minus1 = True
+#     a = abs(int(a)) * down + up
+#     b = down
 # except ValueError:
 #     try:
-#         a, b = map(str, frac.split("."))
-#         if frac[0] == "-":
-#             minus1 = True
-#             a = abs(int(a))
-#         a = (int(a) * (10 ** len(b))) + int(b)
-#         b = 10 ** len(b)
+#         a, b = map(int, frac.split("/"))
 #     except ValueError:
-#         a = int(frac)
+#         try:
+#             a, b = map(str, frac.split("."))
+#             if frac[0] == "-":
+#                 minus1 = True
+#                 a = abs(int(a))
+#             a = (int(a) * (10 ** len(b))) + int(b)
+#             b = 10 ** len(b)
+#         except ValueError:
+#             a = int(frac)
+
 # frac = input("Podaj drugi ułamek(a/b): ")
 # try:
-#     c, d = map(int, frac.split("/"))
+#     c, d = map(str, frac.split(" "))
+#     up, down = map(int, d.split("/"))
+#     if int(c) < 0:
+#         minus2 = True
+#     c = abs(int(c)) * down + up
+#     d = down
 # except ValueError:
 #     try:
-#         c, d = map(str, frac.split("."))
-#         if frac[0] == "-":
-#             minus2 = True
-#             c = abs(int(c))
-#         c = (int(c) * (10 ** len(d))) + int(d)
-#         d = 10 ** len(d)
+#         c, d = map(int, frac.split("/"))
 #     except ValueError:
-#         c = int(frac)
+#         try:
+#             c, d = map(str, frac.split("."))
+#             if frac[0] == "-":
+#                 minus2 = True
+#                 c = abs(int(c))
+#             c = (int(c) * (10 ** len(d))) + int(d)
+#             d = 10 ** len(d)
+#         except ValueError:
+#             c = int(frac)
 # if b == 0 or d == 0:
 #     print("Mianownik nie może być równy 0!\nBłąd")
 #     exit()
