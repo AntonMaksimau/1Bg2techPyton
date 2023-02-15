@@ -1,8 +1,9 @@
 W = str(input())
+
 W = W + "."
 # 5M3A4RE2C3ZE2K
 
-print(W[8])
+# print(W[8])
 print(len(W))
 
 ilość = 1

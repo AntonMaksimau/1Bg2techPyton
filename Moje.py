@@ -348,7 +348,7 @@
 #     else:
 #         print("0")
 
-## 8.0
+# 8.0
 # from collections import Counter
 # n = str(input("Введите соддержание текста: "))
 # list = []
@@ -377,7 +377,7 @@
 # for i in range(len(odp)):
 #     print(odp[i])
 
-### 8.1
+## 8.1
 # from collections import Counter
 # n = input("Введите содержание текста: ")
 # c = Counter(n)
@@ -388,7 +388,7 @@
 #     else:
 #         print(f"{i} : {count}")
 
-### 8.2 ......
+## 8.2 ......
 # n = input("Введите содержание текста: ")
 # list = []
 # for i in range(len(n)):
@@ -421,14 +421,14 @@
 # print(answ, upsum / downsum)
 
 # 10.0
-passwd = int(input("Twoje hasło: "))
-for i in range(10):
-    print(i)
-    if i == passwd:
-        print(f"Password has cracked: {i}")
-        break
-    for a in range(10):
-        print(str(a) + str(i))
-        if int(str(i) + str(a)) == passwd:
-            print(f"Password has cracked: {int(str(i) + str(a))}")
-            break
+# passwd = int(input("Twoje hasło: "))
+# for i in range(10):
+#     print(i)
+#     if i == passwd:
+#         print(f"Password has cracked: {i}")
+#         break
+#     for a in range(10):
+#         print(str(a) + str(i))
+#         if int(str(i) + str(a)) == passwd:
+#             print(f"Password has cracked: {int(str(i) + str(a))}")
+#             break
